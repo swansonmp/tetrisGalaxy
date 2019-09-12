@@ -34,15 +34,15 @@ FAQs
 
 Source Code
 -----------
-.. highlight:: java
+.. code:: java
 	while (!g.startIt()) { wait(150); }
 		g.passIn(board, activeSet, scoring, bag);
 		try { gameLoop();}
 		catch (Exception e) { g.end();}
 
-The code for the game loop, located in `Game.java`. The graphics driver `g` is 
-passed in game information from the previous iteration via the `passIn` method.
-Then, the `gameLoop` function computes logic for the next game tick.
+The code for the game loop, located in :code:`Game.java`. The graphics driver :code:`g` is 
+passed in game information from the previous iteration via the :code:`passIn` method.
+Then, the :code:`gameLoop` function computes logic for the next game tick.
 
 Additional source code for Tetris Galaxy can be found on `Github <https://github.com/swansonmp/tetrisgalaxy>`_
 
