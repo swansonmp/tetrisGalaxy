@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gameplay &#8212; Tetris Galaxy 1.0.4.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Requirements" href="requirements.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="gameplay">
+<h1>Gameplay<a class="headerlink" href="#gameplay" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="starting-the-game">
+<h2>Starting the Game<a class="headerlink" href="#starting-the-game" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Run TetrisGalaxy.jar</p></li>
+</ol>
+<p>The play screen will appear automatically following two splash screens.</p>
+</div>
+<div class="section" id="controls">
+<h2>Controls<a class="headerlink" href="#controls" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Move block: <code class="code docutils literal notranslate"><span class="pre">up</span></code>, <code class="code docutils literal notranslate"><span class="pre">down</span></code>, <code class="code docutils literal notranslate"><span class="pre">left</span></code>, <code class="code docutils literal notranslate"><span class="pre">right</span></code></p></li>
+<li><p>Rotate left: <code class="code docutils literal notranslate"><span class="pre">z</span></code></p></li>
+<li><p>Rotate right: <code class="code docutils literal notranslate"><span class="pre">x</span></code></p></li>
+<li><p>Drop block: <code class="code docutils literal notranslate"><span class="pre">space</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>Gameplay<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="objective">
+<h3>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h3>
+<p>Like Tetris, the objective of Tetris Galaxy is to clear lines to get the highest score possible.</p>
+</div>
+<div class="section" id="block-falling">
+<h3>Block-falling<a class="headerlink" href="#block-falling" title="Permalink to this headline">¶</a></h3>
+<p>Blocks fall from the edges of the play area, starting at the top edge and changing clockwise for every fallen block.
+Blocks will stop either on the red center block or on any other placed blocks.</p>
+<video preload autoplay loop><source src="fall.mp4" type="video/mp4"></video>
+</div>
+<div class="section" id="line-clears">
+<h3>Line Clears<a class="headerlink" href="#line-clears" title="Permalink to this headline">¶</a></h3>
+<p>Lines are cleared in concentric squares around the center. Exterior blocks collapse inward on line clear.</p>
+<video preload autoplay loop><source src="clear.mp4" type="video/mp4"></video>
+<p>Clearing multiple lines at once is worth more points than clearing lines individually. Clearing four lines at once is known as a <em>Galactic Tetris</em>.</p>
+<video preload autoplay loop><source src="tetris.mp4" type="video/mp4"></video>
+</div>
+<div class="section" id="other-maneuvers">
+<h3>Other Maneuvers<a class="headerlink" href="#other-maneuvers" title="Permalink to this headline">¶</a></h3>
+<p>The player can speed up falling blocks by holding arrow key corresponding to the fall direction.</p>
+<p>For example, if the block is falling from the top of the screen, the player may hold <code class="code docutils literal notranslate"><span class="pre">down</span></code>
+the speed up the falling block.</p>
+<video preload autoplay loop><source src="speedup.mp4" type="video/mp4"></video>
+<p>The player can drop falling blocks by pressing <code class="code docutils literal notranslate"><span class="pre">space</span></code>. A ‘shadow’ block displays a preview
+of where the block will land. Luckily, the player cannot drop blocks into empty space.</p>
+<video preload autoplay loop><source src="drop.mp4" type="video/mp4"></video>
+</div>
+<div class="section" id="end-conditions">
+<h3>End Conditions<a class="headerlink" href="#end-conditions" title="Permalink to this headline">¶</a></h3>
+<p>The game ends when either…</p>
+<ul class="simple">
+<li><p>The player sends a block into empty space</p></li>
+<video preload autoplay loop><source src="lose1.mp4" type="video/mp4"></video>
+<li><dl class="simple">
+<dt>The player fills up the play area</dt><dd><ul>
+<li><p>Filling up just one edge results in a game over</p></li>
+<video preload autoplay loop><source src="lose2.mp4" type="video/mp4"></video>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Tetris Galaxy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="README.html">README</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gameplay</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#starting-the-game">Starting the Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#controls">Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Gameplay</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#objective">Objective</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#block-falling">Block-falling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#line-clears">Line Clears</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#other-maneuvers">Other Maneuvers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#end-conditions">End Conditions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="requirements.html" title="previous chapter">Requirements</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Matthew Swanson.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/gameplay.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

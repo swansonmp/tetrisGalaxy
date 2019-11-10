@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tetris Galaxy v1.0.4.1 &#8212; Tetris Galaxy 1.0.4.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Requirements" href="requirements.html" />
+    <link rel="prev" title="Tetris Galaxy" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="tetris-galaxy-v1-0-4-1">
+<h1>Tetris Galaxy v1.0.4.1<a class="headerlink" href="#tetris-galaxy-v1-0-4-1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Tetris Galaxy is a video game inspired by Tetris. In Tetris Galaxy, blocks fall
+from all edges of the screen towards the center. Lines are cleared in concentric
+squares around the center. Tetris Galaxy is a fun variation of Tetris that would
+be enjoyable to any Tetris fan.</p>
+<div class="section" id="scope">
+<h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h3>
+<p>This guide is for users seeking to install and play Tetris Galaxy.</p>
+<p>This guide is <em>not</em> for users seeking extensive help to modify Tetris Galaxy.</p>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple" start="0">
+<li><p>If you haven’t already, install <a class="reference external" href="https://www.java.com/en/">Java SE 8</a></p></li>
+<li><p>Download the Tetris Galaxy directory from <a class="reference external" href="https://www.github.com/swansonmp/tetrisgalaxy">Github</a></p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/dl.png"><img alt="image of github download" class="align-center" src="_images/dl.png" style="width: 372.0px; height: 221.0px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>Run TetrisGalaxy.jar</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/file.png"><img alt="image of files in local directory" class="align-center" src="_images/file.png" style="width: 240.0px; height: 260.0px;" /></a>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>Full documentation can be found <a class="reference external" href="http://swansonmp.github.io/tetrisGalaxyDocs">here</a></p>
+</div>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><em>Tetris Galaxy isn’t working!</em></dt><dd><ol class="arabic simple">
+<li><p>Ensure Java is installed</p></li>
+<li><p>Ensure TetrisGalaxy.jar is placed in the same directory as all its folders and dependencies</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="faqs">
+<h2>FAQs<a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><em>How do I know if I have Java?</em></dt><dd><ul>
+<li><dl class="simple">
+<dt>Windows</dt><dd><ul>
+<li><p>Select Start -&gt; Control Panel -&gt; Add/Remove Programs</p></li>
+<li><p>If Java is not listed, you must install Java</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Mac</dt><dd><ul>
+<li><p>Under System Preferences, click on the Java icon</p></li>
+<li><p>If you do not see a Java icon, you must install Java</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><em>Where is the pause menu? Where is the main menu?</em></dt><dd><ul>
+<li><p>Menus are the first of many features planned for Tetris Galaxy</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><em>What is the inspiration for the Tetris Galaxy?</em></dt><dd><ul>
+<li><p>Tetris Galaxy is the result of a single “what if?” from a team of Tetris fans</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="source-code">
+<h2>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>while (!g.startIt()) { wait(150); }
+    g.passIn(board, activeSet, scoring, bag);
+    try { gameLoop();}
+    catch (Exception e) { g.end();}
+</pre></div>
+</div>
+<p>Code for the game loop located in <code class="code docutils literal notranslate"><span class="pre">Game.java</span></code>. The graphics driver <code class="code docutils literal notranslate"><span class="pre">g</span></code> is
+passed in game information from the previous iteration via the <code class="code docutils literal notranslate"><span class="pre">passIn</span></code> method.
+Then, the <code class="code docutils literal notranslate"><span class="pre">gameLoop</span></code> function computes logic for the next game tick.</p>
+<p>Additional source code for Tetris Galaxy can be found on <a class="reference external" href="https://github.com/swansonmp/tetrisgalaxy">Github</a>.</p>
+</div>
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>For additional support, contact [email]</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Tetris Galaxy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">README</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scope">Scope</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faqs">FAQs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#source-code">Source Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#support">Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gameplay.html">Gameplay</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Tetris Galaxy</a></li>
+      <li>Next: <a href="requirements.html" title="next chapter">Requirements</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Matthew Swanson.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/README.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
