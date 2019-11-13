@@ -24,9 +24,9 @@ This guide is *not* for users seeking extensive help to modify Tetris Galaxy.
 
 ![image of files in local directory](file.png "Running TetrisGalaxy.jar")
 
-## Documentation
+## Gameplay
 
-Full documentation can be found [here](http://swansonmp.github.io/tetrisGalaxy).
+Gameplay information can be found [here](gameplay.md).
 
 ## Troubleshooting
 
