@@ -18,15 +18,15 @@ This guide is *not* for users seeking extensive help to modify Tetris Galaxy.
 0. If you haven't already, install [Java SE 8](https://www.java.com/en/)
 1. Download the Tetris Galaxy directory from [Github](https://www.github.com/swansonmp/tetrisGalaxy)
   
-![image of github download](https://github.com/swansonmp/tetrisGalaxy/docs/dl.png "Downloading Tetris Galaxy")
+![image of github download](dl.png "Downloading Tetris Galaxy")
 
 2. Run TetrisGalaxy.jar
 
-![image of files in local directory](https://github.com/swansonmp/tetrisGalaxy/docs/file.png "Running TetrisGalaxy.jar")
+![image of files in local directory](file.png "Running TetrisGalaxy.jar")
 
 ## Documentation
 
-Full documentation can be found `here <http://swansonmp.github.io/tetrisGalaxy>`_
+Full documentation can be found [here](http://swansonmp.github.io/tetrisGalaxy).
 
 ## Troubleshooting
 
@@ -57,9 +57,9 @@ while (!g.startIt()) { wait(150); }
     catch (Exception e) { g.end();}
 ```
 
-Code for the game loop located in :code:`Game.java`. The graphics driver :code:`g` is 
-passed in game information from the previous iteration via the :code:`passIn` method.
-Then, the :code:`gameLoop` function computes logic for the next game tick.
+Code for the game loop located in `Game.java`. The graphics driver `g` is 
+passed in game information from the previous iteration via the `passIn` method.
+Then, the `gameLoop` function computes logic for the next game tick.
 
 Additional source code for Tetris Galaxy can be found on [Github](https://github.com/swansonmp/tetrisGalaxy).
 
