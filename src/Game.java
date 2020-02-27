@@ -3,7 +3,7 @@ import java.awt.event.KeyListener;
 import java.util.Arrays;
 import java.util.Random;
 // Tetris Galaxy 1.0.4.1 -- config added
-// Ethan Fritz, Nicolas Landaverde, William Sease, Matthew Swanson 2019
+// Ethan Fritz, Nic Landaverde, William Sease, Matthew Swanson 2019
 public class Game
 {
     public static final int augment = 24;
